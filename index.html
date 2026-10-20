@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automated Dashboards</title>
+<style>
+  :root { --bg: #f6f7f5; --panel: #ffffff; --line: #dfe2dd; --fg: #141714; --muted: #5d635c; --accent: #2a78d6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121412; --panel: #1b1e1b; --line: #2e332e; --fg: #eef0ec; --muted: #a3aaa2; --accent: #4b93ea; color-scheme: dark; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem max(16px, env(safe-area-inset-left, 0px)) 3rem max(16px, env(safe-area-inset-right, 0px)); }
+  h1 { font: 400 2.25rem/1.15 Georgia, serif; margin: 0 0 .5rem; }
+  p { color: var(--muted); margin: 0 0 2rem; }
+  a.card { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1.25rem; color: inherit; text-decoration: none; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+  a.card strong { color: var(--accent); font-weight: 600; }
+  a.card span { display: block; color: var(--muted); font-size: .875rem; margin-top: .25rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Automated dashboards</h1>
+  <p>Self-contained dashboards, one per folder.</p>
+  <a class="card" href="alexa-review-insights/">
+    <strong>Alexa Review Insights →</strong>
+    <span>Negative-review rates, rating mix and review text for 2,435 Amazon Echo and Fire TV Stick reviews (May–Jul 2025).</span>
+  </a>
+</main>
+</body>
+</html>
